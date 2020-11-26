@@ -1,0 +1,6 @@
+from ThreeDimensionalShapes.prism import Prism
+from ThreeDimensionalShapes.rectangular_prism import RectangularPrism
+from ThreeDimensionalShapes.triangular_prism import TriangularPrism
+from ThreeDimensionalShapes.cube import Cube
+from ThreeDimensionalShapes.cylinder import Cylinder
+from ThreeDimensionalShapes.sphere import Sphere

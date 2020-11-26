@@ -1,0 +1,2 @@
+from GeometricFigures.three_dimensional_shape import ThreeDimensionalShape
+from GeometricFigures.two_dimensional_shape import TwoDimensionalShape
