@@ -4,7 +4,7 @@ This is a simple Python code project that contains classes that represent the ge
 
 This demo generically classifies the shapes into:
 1. Two-Dimensional Shapes
--	For each of the Two-Dimensional Shape, its area and perimenter properties are defined.
+-	For each of the Two-Dimensional Shape, its area and perimeter properties are defined.
 
 2. Three-Dimensional Shapes.
 -	For each of the Three-Dimensional Shape, its surface area and volume properties are defined.
@@ -34,11 +34,12 @@ Source: https://en.wikipedia.org/wiki/Cylinder#Prisms
 The objective of this project is to perform test-driven development to define each shape into production.
 The test methods of the following test classes are created first before creating each of the shape classes for production.
 1.	Test Three Dimensional Shapes
--	test_rectangular_prism() to create and test Rectangular Prism class and to further test Prism base class.
+-   test_prism() to create and test the base class Prism.
+-	test_rectangular_prism() to create and test Rectangular Prism class.
 -	test_sphere() to create and test Sphere class.
--	test_cylinder() to create and test Cylinder class and to further test Prism base class.
--	test_triangular_prism() to create and test Triangular Prism class and to further test Prism base class.
--	test_cube() to create and test Cube class and to further test Prism base class.
+-	test_cylinder() to create and test Cylinder class.
+-	test_triangular_prism() to create and test Triangular Prism class.
+-	test_cube() to create and test Cube class.
 2.	Test Two Dimensional Shapes
 -	test_rectangle() to create and test Rectangle class.
 -	test_circle() to create and test Circle class.
@@ -53,6 +54,8 @@ While performing test driven development, here are some of the test-driven class
 	-	Square is a Two-Dimensional Shape.
 	-	Triangle is a Two-Dimensional Shape.
 	-	Rectangle is a Two-Dimensional Shape.
+-   We shall test if each two-dimensional shape returns the correct perimeter and area.
+-   We shall also test if each two-dimensional shape above is an instance of the defined Two-Dimensional Shape interface.
 
 2.	Three-dimensional shape are generically defined as an interface with contract methods get_volume() and get_surface_area() for classes Rectangular Prism, Triangular Prism, Cylinder, Cube and Sphere to implement.
 -	The interface enforces these IS-A relationships:
@@ -61,6 +64,8 @@ While performing test driven development, here are some of the test-driven class
 	-	Cube is a Three-Dimensional Shape.
 	-	Rectangular Prism is a Three-Dimensional Shape.
 	-	Triangular Prism is a Three-Dimensional Shape.
+-   We shall test if each three-dimensional shape returns the correct surface area and volume.
+-   We shall also test if each three-dimensional shape above is an instance of the defined Three-Dimensional Shape interface.
 
 3. Base class Prism is created where Cylinder, Rectangular Prism, Triangular Prism and Cube are its derived classes.
 -	Each of these prisms (Cylinder, Rectangular Prism, Triangular Prism and Cube) can have its properties computed as such:

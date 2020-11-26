@@ -1,5 +1,6 @@
 import unittest
 import math
+from GeometricFigures import TwoDimensionalShape
 from TwoDimensionalShapes import Rectangle
 from TwoDimensionalShapes import Circle
 from TwoDimensionalShapes import Triangle
@@ -14,6 +15,7 @@ class TestTwoDimensionalShapes(unittest.TestCase):
         expected_perimeter = 2*length + 2*width
 
         rectangle = Rectangle(length=length, width=width)
+        self.assertTrue(isinstance(rectangle, TwoDimensionalShape))
         self.assertEqual(expected_area, rectangle.get_area())
         self.assertEqual(expected_perimeter, rectangle.get_perimeter())
 
@@ -24,6 +26,7 @@ class TestTwoDimensionalShapes(unittest.TestCase):
         expected_area = math.pi*pow(radius,2)
 
         circle = Circle(radius=radius)
+        self.assertTrue(isinstance(circle, TwoDimensionalShape))
         self.assertEqual(expected_area, circle.get_area())
         self.assertEqual(expected_perimeter, circle.get_perimeter())
 
@@ -37,6 +40,7 @@ class TestTwoDimensionalShapes(unittest.TestCase):
         expected_perimeter = first_side + second_side + third_side
 
         triangle = Triangle(a=first_side, b=second_side, c=third_side)
+        self.assertTrue(isinstance(triangle, TwoDimensionalShape))
         self.assertEqual(expected_area, triangle.get_area())
         self.assertEqual(expected_perimeter, triangle.get_perimeter())
 
@@ -54,6 +58,7 @@ class TestTwoDimensionalShapes(unittest.TestCase):
         expected_perimeter = 4*side
 
         square = Square(side=side)
+        self.assertTrue(isinstance(square, TwoDimensionalShape))
         self.assertEqual(expected_area, square.get_area())
         self.assertEqual(expected_perimeter, square.get_perimeter())
 
