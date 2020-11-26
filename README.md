@@ -1,13 +1,13 @@
 Marc Concepcion's Geometry Demo codes to demonstrate Test-Driven Development in Python
 
-This is a simple Python code that contains classes that represent the geometric measurement properties of some well-known two-dimensional and three-dimensional shapes.
+This is a simple Python code project that contains classes that represent the geometric measurement properties of some well-known two-dimensional and three-dimensional shapes.
 
 This demo generically classifies the shapes into:
 1. Two-Dimensional Shapes
 -	For each of the Two-Dimensional Shape, its area and perimenter properties are defined.
 
 2. Three-Dimensional Shapes.
--	For each of the Three-Dimensional Shape, its surface area and volume are defined.
+-	For each of the Three-Dimensional Shape, its surface area and volume properties are defined.
 
 Here are the two-dimensional shapes decribed by the project:
 1. Circle*
@@ -15,8 +15,8 @@ Here are the two-dimensional shapes decribed by the project:
 3. Square
 4. Triangle
 
-* Please take note that I treat the circumference of a circle as its "perimeter" based from this statement from Wikipedia:
-"The perimeter of a circle or ellipse is called its circumference."
+\* Please take note that I treat the circumference of a circle as its perimeter based from this statement from Wikipedia:\
+"The perimeter of a circle or ellipse is called its circumference."\
 Source: https://en.wikipedia.org/wiki/Perimeter
 
 Here are the three-dimensional shapes described by the project:
@@ -27,16 +27,16 @@ Here are the three-dimensional shapes described by the project:
 -	Cylinder**
 2. Sphere
 
-** Please take note that I treat Cylinder as a Prism based from this statement from Wikipedia:
-"A solid circular cylinder can be seen as the limiting case of a n-gonal prism where n approaches infinity."
+\** Please take note that I treat Cylinder as a Prism based from this statement from Wikipedia:\
+"A solid circular cylinder can be seen as the limiting case of a n-gonal prism where n approaches infinity."\
 Source: https://en.wikipedia.org/wiki/Cylinder#Prisms
 
 The objective of this project is to perform test-driven development to define each shape into production.
 The test methods of the following test classes are created first before creating each of the shape classes for production.
 1.	Test Three Dimensional Shapes
--	test_rectangular_prism() to create and test Rectangular Prism class and to further test Prism class.
+-	test_rectangular_prism() to create and test Rectangular Prism class and to further test Prism base class.
 -	test_sphere() to create and test Sphere class.
--	test_cylinder() to create and test Cylinder class and to further test Prism class.
+-	test_cylinder() to create and test Cylinder class and to further test Prism base class.
 -	test_triangular_prism() to create and test Triangular Prism class and to further test Prism base class.
 -	test_cube() to create and test Cube class and to further test Prism base class.
 2.	Test Two Dimensional Shapes
@@ -66,7 +66,8 @@ While performing test driven development, here are some of the test-driven class
 -	Each of these prisms (Cylinder, Rectangular Prism, Triangular Prism and Cube) can have its properties computed as such:
 	-	Volume = Height x Base Area
 	-	Surface Area = 2 x Base Area + Height x Base Perimeter
--	Therefore, the Prism has defined get_volume() and get_suface_area() methods which its derived class shall inherit from and use.
+-	Therefore, the Prism has defined get_volume() and get_suface_area() methods which its derived classes shall inherit from and use.
+	Also, the Prism HAS-A "height" and "base shape" class members which its derived classes shall inherit from and use.
 -	Thus, the Base Class Prism further defines these IS-A relationships:
 	-	Sphere is a Three-Dimensional Shape.
 	-	Prism is a Three-Dimensional Shape.
