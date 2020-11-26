@@ -4,7 +4,7 @@ from GeometricFigures import TwoDimensionalShape
 class Triangle(TwoDimensionalShape):
     def __init__(self, a, b, c):
         if not all([a+b > c, a+c > b, b+c > a]):
-            raise Exception("INVALID TRIANGLE. Please provide legitimate triangle lengths.")
+            raise Exception("NOT A TRIANGLE. Please provide valid triangle sides.")
         self.a = a
         self.b = b
         self.c = c

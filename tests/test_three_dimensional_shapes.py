@@ -8,7 +8,7 @@ from ThreeDimensionalShapes import Cylinder
 from ThreeDimensionalShapes import TriangularPrism
 from ThreeDimensionalShapes import Cube
 
-class TestTheeDimensionalShapes(unittest.TestCase):
+class TestThreeDimensionalShapes(unittest.TestCase):
     def test_rectangular_prism(self):
         length = 10
         width = 20
