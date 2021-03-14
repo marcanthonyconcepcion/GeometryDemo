@@ -1,5 +1,6 @@
 from GeometricFigures import ThreeDimensionalShape
 
+
 class Prism(ThreeDimensionalShape):
     def __init__(self, height, base_shape):
         self.height = height

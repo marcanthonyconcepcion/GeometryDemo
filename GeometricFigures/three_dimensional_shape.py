@@ -1,5 +1,6 @@
 import abc
 
+
 class ThreeDimensionalShape(metaclass=abc.ABCMeta):
 
     @abc.abstractmethod

@@ -1,5 +1,6 @@
 import abc
 
+
 class TwoDimensionalShape(metaclass=abc.ABCMeta):
 
     @abc.abstractmethod
