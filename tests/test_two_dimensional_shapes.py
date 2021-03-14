@@ -8,7 +8,7 @@ from TwoDimensionalShapes import Square
 
 class TestTwoDimensionalShapes(unittest.TestCase):
     def test_rectangle(self):
-        length = 10
+        length = 10.45
         width = 20
 
         expected_area = length*width
@@ -32,7 +32,7 @@ class TestTwoDimensionalShapes(unittest.TestCase):
 
     def test_triangle(self):
         first_side = 70
-        second_side = 100
+        second_side = 100.1234
         third_side = 50
 
         half_perimeter = (first_side + second_side + third_side)/2
@@ -47,7 +47,7 @@ class TestTwoDimensionalShapes(unittest.TestCase):
     def test_invalid_triangle(self):
         first_side = 10
         second_side = 20
-        third_side = 30
+        third_side = 30.3435
         with self.assertRaises(Exception):
             Triangle(a=first_side, b=second_side, c=third_side)
 
@@ -61,6 +61,7 @@ class TestTwoDimensionalShapes(unittest.TestCase):
         self.assertTrue(isinstance(square, TwoDimensionalShape))
         self.assertEqual(expected_area, square.get_area())
         self.assertEqual(expected_perimeter, square.get_perimeter())
+
 
 if __name__ == '__main__':
     unittest.main()

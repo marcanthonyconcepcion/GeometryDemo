@@ -1,6 +1,7 @@
 import math
 from GeometricFigures import TwoDimensionalShape
 
+
 class Triangle(TwoDimensionalShape):
     def __init__(self, a, b, c):
         if not all([a+b > c, a+c > b, b+c > a]):

@@ -1,5 +1,6 @@
 from GeometricFigures import TwoDimensionalShape
 
+
 class Rectangle(TwoDimensionalShape):
     def __init__(self, length, width):
         self.length = length

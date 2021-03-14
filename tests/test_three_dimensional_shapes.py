@@ -11,7 +11,7 @@ from ThreeDimensionalShapes import Cube
 
 class TestThreeDimensionalShapes(unittest.TestCase):
     def test_prism(self):
-        length = 40
+        length = 40.2343
         width = 50
         height = 60
         base_rectangle_area = length * width
@@ -32,7 +32,7 @@ class TestThreeDimensionalShapes(unittest.TestCase):
     def test_rectangular_prism(self):
         length = 10
         width = 20
-        height = 30
+        height = 30.3454
         base_rectangle_area = length*width
         base_rectangle_perimeter = 2*(length + width)
 
@@ -60,7 +60,7 @@ class TestThreeDimensionalShapes(unittest.TestCase):
         self.assertEqual(expected_surface_area, sphere.get_surface_area())
 
     def test_cylinder(self):
-        radius = 10
+        radius = 10.3452
         height = 30
 
         base_circle_area = math.pi*pow(radius, 2)
@@ -80,9 +80,9 @@ class TestThreeDimensionalShapes(unittest.TestCase):
         self.assertEqual(expected_surface_area_direct, cylinder.get_surface_area())
 
     def test_triangular_prism(self):
-        a = 20
-        b = 30
-        c = 40
+        a = 20.2345
+        b = 30.2345
+        c = 40.2345
         prism_height = 30
 
         base_triangle_perimeter = a+b+c
@@ -115,6 +115,7 @@ class TestThreeDimensionalShapes(unittest.TestCase):
         expected_surface_area_direct = 6*math.pow(side, 2)
         self.assertEqual(expected_volume_direct, cube.get_volume())
         self.assertEqual(expected_surface_area_direct, cube.get_surface_area())
+
 
 if __name__ == '__main__':
     unittest.main()
