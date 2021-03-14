@@ -1,8 +1,10 @@
+from typing import Union
 from GeometricFigures import ThreeDimensionalShape
+from GeometricFigures import TwoDimensionalShape
 
 
 class Prism(ThreeDimensionalShape):
-    def __init__(self, height, base_shape):
+    def __init__(self, height: Union[int, float], base_shape: TwoDimensionalShape):
         self.height = height
         self.base_shape = base_shape
 

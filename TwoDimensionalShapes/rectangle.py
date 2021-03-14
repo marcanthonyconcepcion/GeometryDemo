@@ -1,8 +1,9 @@
+from typing import Union
 from GeometricFigures import TwoDimensionalShape
 
 
 class Rectangle(TwoDimensionalShape):
-    def __init__(self, length, width):
+    def __init__(self, length: Union[int,float], width: Union[int,float]):
         self.length = length
         self.width = width
 

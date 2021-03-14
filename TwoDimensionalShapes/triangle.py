@@ -1,9 +1,10 @@
 import math
+from typing import Union
 from GeometricFigures import TwoDimensionalShape
 
 
 class Triangle(TwoDimensionalShape):
-    def __init__(self, a, b, c):
+    def __init__(self, a: Union[int,float], b: Union[int,float], c: Union[int,float]):
         if not all([a+b > c, a+c > b, b+c > a]):
             raise Exception("NOT A TRIANGLE. Please provide valid triangle sides.")
         self.a = a
