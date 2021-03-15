@@ -5,9 +5,9 @@ from typing import Union
 class TwoDimensionalShape(metaclass=abc.ABCMeta):
 
     @abc.abstractmethod
-    def get_area(self) -> Union[int, float]:
+    def get_area(self):
         pass
 
     @abc.abstractmethod
-    def get_perimeter(self) -> Union[int, float]:
+    def get_perimeter(self):
         pass
